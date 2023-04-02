@@ -1,10 +1,9 @@
-function HelloComponent() {
-  return <h1>Hello World</h1>;
+function Greeting(props) {
+  return <h1>Hello {props.name}</h1>;
 }
 
 function App() {
-  return <HelloComponent />;
+  return <Greeting name="John" />;
 }
 
 ReactDOM.render(<App />, document.getElementById('root'));
-
